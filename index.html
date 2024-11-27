@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Product Cart</title>
+    <link rel="stylesheet" href="try.css" />
+    <link rel="icon" type="image/x-icon" href="assets/images/restau.svg" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="products-section">
+        <h1>Desserts</h1>
+        <div class="products-grid">
+          <!-- Product card 1 -->
+          <div
+            class="product-card"
+            data-product-id="1"
+            data-product-name="Waffle with Berries"
+            data-product-price="6.50"
+          >
+            <img src="waffle.jpg" alt="Waffle with Berries" />
+            <h2>Waffle with Berries</h2>
+            <p class="price">$6.50</p>
+
+            <button class="add-to-cart">Add to Cart</button>
+
+            <div class="quantity-controls hide">
+              <button>-</button>
+              <span class="qty">0</span>
+              <button>+</button>
+            </div>
+          </div>
+
+          <!-- Product card 2 -->
+          <div
+            class="product-card"
+            data-product-id="2"
+            data-product-name="Vanilla Bean Crème Brûlée"
+            data-product-price="7.50"
+          >
+            <img src="creme-brulee.jpg" alt="Vanilla Bean Crème Brûlée" />
+            <h2>Vanilla Bean Crème Brûlée</h2>
+            <p class="price">$7.00</p>
+
+            <button class="add-to-cart">Add to Cart</button>
+
+            <!-- quantity controlers buttons -->
+            <div class="quantity-controls hide">
+              <button class="minus">-</button>
+              <span class="qty">0</span>
+              <button class="plus">+</button>
+            </div>
+          </div>
+          <!-- Repeat similar cards for other products -->
+        </div>
+      </section>
+
+      <section class="cart-section">
+        <h2>Your Cart (<span id="cart-count">0</span>)</h2>
+        <ul id="cart-items ">
+          <p>Total: $<span id="cart-total">0.00</span></p>
+          <button id="confirm-order hide">Confirm Order</button>
+        </ul>
+
+        <div class="cart-placeholder">
+          <img src="cart-placeholder.jpg" alt="Cart" />
+          <p>Your added items will appear here</p>
+        </div>
+      </section>
+    </div>
+    <!-- <script src="try.js"></script> -->
+    <script src="script.js"></script>
+  </body>
+</html>
